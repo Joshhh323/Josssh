@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="google" />
+
+    <title>TU EMPLEO - MINTRAB</title>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="menu">
+        <input
+          type="checkbox"
+          id="responsive-menu"
+          onclick="updatemenu()"
+        /><label></label>
+        <ul>
+          <li><a href="ayuda.html">Ayuda</a></li>
+          <li>
+            <a class="dropdown-arrow"> Menú</a>
+            <ul class="sub-menus">
+              <li><a href="gestion.html">Gestion de empleo</a></li>
+              <li><a href="actividades.html">Actividades promocionales</a></li>
+              <li>
+                <a href="formacion.html"
+                  >Formacion y capacitacion para el trabajo</a
+                >
+              </li>
+              <li><a href="orientacion.html">Orientacion laboral</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown-arrow"> Servicios</a>
+            <ul class="sub-menus">
+              <li><a href="gestion.html">Gestion de empleo</a></li>
+              <li><a href="actividades.html">Actividades promocionales</a></li>
+              <li>
+                <a href="formacion.html"
+                  >Formacion y capacitacion para el trabajo</a
+                >
+              </li>
+              <li><a href="orientacion.html">Orientacion laboral</a></li>
+            </ul>
+          </li>
+          <li><a href="iniciar.html">Iniciar sesion</a></li>
+        </ul>
+
+        <img
+          class="imglogo"
+          src="https://cdn.glitch.global/1c1c60be-168e-4b6f-af3b-cc0300373247/Logo%20principal.png?v=1697571288169"
+        />
+      </nav>
+    </header>
+  </body>
+</html>
