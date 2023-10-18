@@ -1,0 +1,162 @@
+#menu {
+  position: fixed;
+  background: #162b4e;
+  color: #ffffff;
+  height: 71px;
+  padding-left: 18px;
+  border-radius: 0px;
+   top: 0px;
+  left: 0px;
+  width: 100%;
+  }
+#menu ul,
+#menu li {
+   background: #ffffff;
+  border-radius: 40px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  
+  top: 10px;
+  font-weight: bold;
+}
+#menu ul {
+  width: 100%;
+  border-radius: 3px;
+  
+}
+#menu li {
+  float:right;
+  display: inline;
+  position: relative;
+  right:40px ;
+  
+ 
+}
+#menu a {
+  text-align:left;
+  display: block;
+  line-height: 56px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: black; /** esto es el color de las letras **/
+  font-size: 17px;
+  top: 30px;
+  height:50px;
+  
+
+}
+#menu a.dropdown-arrow:after {
+  content: "\2B9F";
+  margin-left: 5px;top: 6px;
+  font-weight: bold;
+
+}
+#menu li a:hover { /**esto es para editar el color de las 
+  letras y color de fondo al pasar el mouse encima de los 
+  botones del menu**/
+  color:black;
+  background: none;
+}
+#menu input {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+  width: 100%;
+  opacity: ;
+  cursor: pointer;
+}
+#menu label {
+  display: none;
+  line-height: 56px;
+  text-align: center;
+  position: absolute;
+  left: 35px;
+}
+#menu label:before {
+  font-size: 1.6em;
+  content: "\2261";
+  margin-left: 20px;
+}
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 300px;
+  background:white; /** esto es el fondo delos submenus **/
+  position: absolute;
+  z-index: 99;
+  display: none;
+  top:52px;
+}
+#menu ul.sub-menus li {
+  display: block;
+  width: 100%;
+}
+#menu ul.sub-menus a {
+  color: black; /** color de letras del submenus**/
+  font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+  display: block;
+}
+#menu ul.sub-menus a:hover {
+  background: #f2f2f2;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative;
+  }
+  #menu ul {
+    background: #111111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-left: 30px;
+  }
+  #menu li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: white;
+  }
+  #menu input:checked + label:before {
+    content: "\00d7";
+  }
+  #menu input:checked ~ ul {
+    display: block;
+  }
+}
+
+body {
+  background: #808080;
+}
+.imglogo {
+  position: relative;
+  top: -8px;
+  left: 84px;
+  width: 21%;
+}
